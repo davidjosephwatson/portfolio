@@ -11,15 +11,14 @@
 	 crossorigin="anonymous">
 </head>
 <body>    
-    <header>
-        <div class="header-container">
-            <div class="navbar">
-                <a class="logo" href="#logo">DAVID WATSON</a>
-                <a class="contact" href="#contact">contact</a>
-                <a class="about" href="#about">about</a>
-                <a class="portfolio" href="#portfolio">portfolio</a>
-            </div>
-        </div>
+    <header class="topnav" id="myTopnav">
+        <a href="#logo" class="active logo">DAVID WATSON</a>
+        <a href="#contact" class="nav-items contact">contact</a>
+        <a href="#about" class="nav-items about">about</a>
+        <a href="#portfolio" class="nav-items portfolio">portfolio</a>
+        <a href="javascript:void(0);" class="icon" onclick="mobileDropMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
     <main>
         <div class="homepage-banner"></div>
@@ -30,30 +29,22 @@
                 <h2 class="down-arrow">VIEW PORTFOLIO</h2>
             </div>
             <div class="down-arrow">&#8659;</div>
-            <!-- &#8675; &#x02228; &#8659;-->
+            <!-- other arrow options &#8675; &#x02228; &#8659;-->
         </div>
         <div class="homepage-portfolio homepage">
             <h1>Featured Work</h1>
-            <section class="first-project projects"></section>
+            <div class="first-project projects"></div>
             <h2>Sailing Quiz App</h2>
             <p>I built this app from scratch utilizing a mobile first design.  It’s comprised of ten questions with a result screen at the end of the quiz.  After each question, the user is provided feedback on whether the response was correct or not.  The focus is on responsive design and functionality through JavaScript and JQuery.</p>
             <p>Technologies Used: HTML, CSS, JavaScript, JQuery</p>
-            <a href="https://davidjosephwatson.github.io/QuizApp/Master/" target="_blank">
-                <input type="button" class="portfolio-button live" value="Project_Link_Live">
-            </a>
-            <a href="https://github.com/davidjosephwatson/QuizApp.git" target="_blank">
-                <input type="button" class="portfolio-button repo" value="Project_Link_Repo">
-            </a>
-            <section class="second-project projects"></section>
+            <a class="portfolio-button live" href="https://davidjosephwatson.github.io/QuizApp/Master/">Live_Link</a>
+            <a class="portfolio-button repo" href="https://github.com/davidjosephwatson/QuizApp.git">Repo_Link</a>
+            <div class="second-project projects"></div>
             <h2>Project Title</h2>
             <p>description...</p>
             <p>Technologies Used: ...</p>
-            <a href="#live" target="_blank">
-                <input type="button" class="portfolio-button live" value="Project_Link_Live">
-            </a>
-            <a href="#repo" target="_blank">
-                <input type="button" class="portfolio-button repo" value="Project_Link_Repo">
-            </a>
+            <a class="portfolio-button live" href="---">Live_Link</a>
+            <a class="portfolio-button repo" href="---">Repo_Link</a>
         </div>
         <div class="homepage-about homepage">
             <h1>ABOUT ME</h1>
@@ -72,9 +63,6 @@
                 </li>
                 <li class="social_icon">
                     <a href="mailto:davidjosephwatson@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                </li>
-                <li class="social_icon">
-                        <a href="https://www.facebook.com/davidjosephwatson/html" target="_blank"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li class="social_icon">
                         <a href="https://www.linkedin.com/in/djw/html" target="_blank"><i class="fab fa-linkedin"></i></a>
